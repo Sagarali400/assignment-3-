@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/83d4bd5df7.js" crossorigin="anonymous"></script>
+    <style>
+        .font{
+            font-family: 'manrope', sans-serif;
+        }
+        .use-back-img{
+          background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,0.5)),url(Images/3.png);
+        }
+    </style>
+</head>
+<body class="font ">
+    <header class="lg:px-32 relative ">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a><span class="text-red-500">Home</span></a></li>
+                  <li>
+                    <a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <a class="btn lg:text-4xl text-[#131318]  btn-ghost font-extrabold">Hockey’s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal text-base px-1">
+                <li><a><span class="text-red-500">Home</span></a></li>
+                  <li>
+                    <a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <a href=""><img src="Images/Frame.svg" alt="" class="pr-6"></a>
+              <a class="btn text-white bg-red-500">Get Ticket</a>
+            </div>
+          </div>
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="lg:w-full " />
+              <div class="absolute transform -translate-y-1/2 lg:left-5 bottom-0 left-1/2 lg:right-5 lg:bottom-2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+
+              </div>
+              
+            </div>
+            
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute  flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-96 rounded-2xl lg:absolute right-40 -bottom-0  h-28 bg-black  text-white p-4 ">
+            <h3 class="text-lg">Meet all the heroes from the field</h3>
+            <p class="text-xs">The heros of the football are messi,ronando,neymar,ronaldinho,maradona.The heros of the cricket are Shakib ,tamim,musfiq.</p>
+            
+          </div>
+          
+    </header>
+    <main class="lg:px-32">
+      <div class="">
+        <p class="py-5 lg:"><hr class="border-dotted "></p>
+        <div class="text-center  pt-10 ">
+          <h1 class="lg:text-4xl font-extrabold">Professional Hockeys Club</h1>
+          <p class=" text-sm py-4 text-[#13131899]">The National Hockey League is a professional ice hockey league in North America comprising 32 teams —25 in the United States and 7 in Canada.</p>
+          
+        </div>
+        <hr>
+      </div>
+      
+       <div class="flex  lg:flex-row flex-col text-center lg:justify-around my-6 ">
+        <div class="pb-4">
+          <div class="radial-progress  text-red-500 text-primary rotate-180" style="--value:87;" role="progressbar"><p class="rotate-180">87%</p></div>
+          <h2 class="text-2xl font-medium">Prayer Facility</h2>
+          <p class="text-xs">Every Muslim is expected to <br> pray five times a day</p>
+        </div>
+        <div class=" pb-4">
+          <div class="radial-progress  text-[#49D293] text-primary rotate-180" style="--value:95;" role="progressbar"><p class="rotate-180">95%</p></div>
+          <h2 class="text-2xl font-medium">Experienced Coach</h2>
+          <p class="text-xs">Every Muslim is expected to <br> pray five times a day</p>
+        </div>
+        <div class="pb-4">
+          <div class="radial-progress  text-[#FFB546] text-primary rotate-180" style="--value:90;" role="progressbar"><p class="rotate-180">90%</p></div>
+          <h2 class="text-2xl font-medium">Senior Player</h2>
+          <p class="text-xs">Every Muslim is expected to <br> pray five times a day</p>
+        </div>
+        <div class="">
+          <div class="radial-progress  text-[#4C8DF1] text-primary rotate-180" style="--value:80;" role="progressbar"><p class="rotate-180">80%</p></div>
+          <h2 class="text-2xl font-medium">Training Ground</h2>
+          <p class="text-xs">Every Muslim is expected to <br> pray five times a day</p>
+          
+        </div>
+        
+        
+          
+       </div>
+       <hr class="border-dotted">
+       <section>
+        
+        <div class="pt-4 ">
+          <div class="text-center">
+            <h1 class="text-4xl font-extrabold">Program Sections</h1>
+            <p class="text-sm ">There are a lot of programs organized by authority .all players are <br> attend into it.</p>
+            <hr class="border-dotted">
+          </div>
+          <hr class="border-dotted">
+        </div> 
+       </section>
+          
+      <section>
+        <div class="grid gap-4 pt-5  lg:grid-cols-2">
+          <div class="relative  bg-no-repeat bg-center rounded-xl text-white   bg-cover w-full h-96  bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/2.png)]">
+            <div class="absolute  top-20 left-20">
+              <h3 class="text-2xl">Junior Program</h3>
+            <p class="text-sm pt-3 pb-3 w-3/4">If you're referring to becoming a junior programmer or seeking information related to junior programming roles, I can provide guidance or answer specific questions you may have</p>
+            <button class="btn border-red-500 text-white bg-red-500">Register Now</button>
+            </div>
+          </div>
+          <div class="relative  bg-no-repeat bg-center rounded-xl text-white   bg-cover w-full h-96  bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/3.png)]">
+            <div class="absolute  top-20 left-20">
+              <h3 class="text-2xl">Teenager Program</h3>
+            <p class="text-sm pt-3 pb-3 w-3/4">If you're referring to becoming a junior programmer or seeking information related to junior programming roles, I can provide guidance or answer specific questions you may have</p>
+            <button class="btn border-red-500 text-white bg-red-500">Register Now</button>
+            </div>
+          </div>
+         
+        </div>
+        <div class="relative my-4 bg-no-repeat bg-center rounded-xl text-white   bg-cover  h-96  bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/4.png)]">
+          <div class="absolute  top-20 left-20">
+            <h3 class="text-2xl">Professional Program</h3>
+          <p class="text-sm pt-3 pb-3 w-3/4">If you're referring to becoming a junior programmer or seeking information related to junior programming roles, I can provide guidance or answer specific questions you may have</p>
+          <button class="btn border-red-500 text-white bg-red-500">Register Now</button>
+          </div>
+        </div>
+        <hr class="border-dotted">
+      </section>
+      <section>
+        <div class="text-center pt-5 text-black">
+          <h3 class="text-3xl font-semibold">Our New Products</h3>
+          <p class="font-normal pb-5 text-[#13131899] text-sm">Great product launch emails sell more products, re-engage customers,<br> and celebrate your team's hard work. </p>
+        </div><hr class="border-dotted">
+        <div class="pt-5">
+
+        </div>
+      </section>
+      <section>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div class="card  lg:card-side bg-base-100 shadow-xl">
+            <figure class="lg:pl-4"><img class="w-full" src="Images/5.png" alt="Movie"/></figure>
+            <div class="card-body">
+              <div>
+                <i class="fa-solid  text-yellow-400 fa-star"><span class="text-black mx-2">5.0</span></i>
+                <i class="fa-regular fa-eye mx-2">20</i>
+                <i class="fa-regular fa-heart mx-2">200</i>
+
+              </div>
+              <h2 class="card-title">World Cup Flags Football</h2>
+              <p>It seems like you've mentioned "World Cup Flags Football.</p>
+              <div class="">
+              
+                <p class=" lg:flex text-red-500 font-extrabold gap-3">Price-$22.00
+                  <span class="text-black "><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</span></p>
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="card lg:card-side bg-base-100 shadow-xl">
+            <figure class="lg:pl-4"><img class="w-full" src="Images/6.png" alt="Movie"/></figure>
+            <div class="card-body">
+              <div>
+                <i class="fa-solid  text-yellow-400 fa-star"><span class="text-black mx-2">5.0</span></i>
+                <i class="fa-regular fa-eye mx-2">20</i>
+                <i class="fa-regular fa-heart mx-2">200</i>
+
+              </div>
+              <h2 class="card-title">World Cup Flags Football</h2>
+              <p>It seems like you've mentioned "World Cup Flags Football.</p>
+              <div class="">
+              
+                <p class=" lg:flex text-red-500 font-extrabold gap-3">Price-$22.00
+                  <span class="text-black "><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</span></p>
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="card lg:card-side bg-base-100 shadow-xl">
+            <figure class="lg:pl-4"><img class="w-full" src="Images/7.png" alt="Movie"/></figure>
+            <div class="card-body">
+              <div>
+                <i class="fa-solid  text-yellow-400 fa-star"><span class="text-black mx-2">5.0</span></i>
+                <i class="fa-regular fa-eye mx-2">20</i>
+                <i class="fa-regular fa-heart mx-2">200</i>
+
+              </div>
+              <h2 class="card-title">World Cup Flags Football</h2>
+              <p>It seems like you've mentioned "World Cup Flags Football.</p>
+              <div class="">
+              
+                <p class=" lg:flex text-red-500 font-extrabold gap-3">Price-$22.00
+                  <span class="text-black "><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</span></p>
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="card lg:card-side bg-base-100 shadow-xl">
+            <figure class="lg:pl-4"><img class="w-full" src="Images/8.png" alt="Movie"/></figure>
+            <div class="card-body">
+              <div>
+                <i class="fa-solid  text-yellow-400 fa-star"><span class="text-black mx-2">5.0</span></i>
+                <i class="fa-regular fa-eye mx-2">20</i>
+                <i class="fa-regular fa-heart mx-2">200</i>
+
+              </div>
+              <h2 class="card-title">World Cup Flags Football</h2>
+              <p>It seems like you've mentioned "World Cup Flags Football.</p>
+              <div class="">
+              
+                <p class=" lg:flex text-red-500 font-extrabold gap-3">Price-$22.00
+                  <span class="text-black "><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</span></p>
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="card lg:card-side bg-base-100 shadow-xl">
+            <figure class="lg:pl-4"><img class="w-full" src="Images/9.png" alt="Movie"/></figure>
+            <div class="card-body">
+              <div>
+                <i class="fa-solid  text-yellow-400 fa-star"><span class="text-black mx-2">5.0</span></i>
+                <i class="fa-regular fa-eye mx-2">20</i>
+                <i class="fa-regular fa-heart mx-2">200</i>
+
+              </div>
+              <h2 class="card-title">World Cup Flags Football</h2>
+              <p>It seems like you've mentioned "World Cup Flags Football.</p>
+              <div class="">
+              
+                <p class=" lg:flex text-red-500 font-extrabold gap-3">Price-$22.00
+                  <span class="text-black "><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</span></p>
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="card lg:card-side bg-base-100 shadow-xl">
+            <figure class="lg:pl-4 "><img class="w-full" src="Images/10.png" alt="Movie"/></figure>
+            <div class="card-body">
+              <div>
+                <i class="fa-solid  text-yellow-400 fa-star"><span class="text-black mx-2">5.0</span></i>
+                <i class="fa-regular fa-eye mx-2">20</i>
+                <i class="fa-regular fa-heart mx-2">200</i>
+
+              </div>
+              <h2 class="card-title">World Cup Flags Football</h2>
+              <p>It seems like you've mentioned "World Cup Flags Football.</p>
+              <div class="">
+              
+                <p class=" lg:flex text-red-500 font-extrabold gap-3">Price-$22.00
+                  <span class="text-black "><i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</span></p>
+                
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <section>
+        <div class="text-center">
+          <hr class="border-dotted mt-5">
+          <h1 class="text-3xl pt-5">Clients Question</h1>
+          <p class="text-xs">If you have a question related to clients or any aspect of client-related matters, and I'll do my best <br>to provide information or assistance. </p>
+          
+        </div>
+        
+      </section>
+      <section>
+        <hr class="border-dotted pt-5">
+        <div class="card lg:card-side bg-base-100 shadow-xl">
+          <figure><img src="Images/11.png" alt="Album"/></figure>
+          <div class="card-body">
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" checked="checked" /> 
+              <div class="collapse-title text-xl font-medium">
+                Our Equipment
+              </div>
+              <div class="collapse-content"> 
+                <p class="text-xs">If you have a specific question or if there's something specific you'd like to know or discuss about equipment, please provide more details so I can better assist you. </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" /> 
+              <div class="collapse-title text-xl font-medium">
+                Hockey Training
+              </div>
+              <div class="collapse-content"> 
+                <p>Are you looking for information about a specific type of equipment, maintenance, troubleshooting</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" /> 
+              <div class="collapse-title text-xl font-medium">
+                Private Lessons
+              </div>
+              <div class="collapse-content"> 
+                <p>Hockey is a popular team sport played on an indoor or outdoor field, or on ice, depending on the variant</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" checked="checked" /> 
+              <div class="collapse-title text-xl font-medium">
+                Ski Touring
+              </div>
+              <div class="collapse-content"> 
+                <p class="text-xs">If you have a specific question or if there's something specific you'd like to know or discuss about equipment, please provide more details so I can better assist you. </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" checked="checked" /> 
+              <div class="collapse-title text-xl font-medium">
+                Booking
+              </div>
+              <div class="collapse-content"> 
+                <p class="text-xs">I want to show you all in our products. </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" checked="checked" /> 
+              <div class="collapse-title text-xl font-medium">
+                Pricings
+              </div>
+              <div class="collapse-content"> 
+                <p class="text-xs">welcome to our world. </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </section>
+      <section>
+        <div class="text-center pt-5 pb-5">
+          
+          <h1 class="text-3xl font-extralight">
+            <hr class="border-dotted  pb-5 ">
+            Get In Touch</h1>
+          <p class="text-sm">i have do work properly to get more and more clients.not only this time,<br>but also the time i have to learn.</p>
+          
+        </div>
+        <hr class="border-dotted pb-5">
+      </section>
+      <section class="pt-10">
+        <div>
+          <div class="card lg:card-side  bg-base-100 shadow-xl">
+           <div class="grid gap-5">
+            <div class="grid  pl-10 pt-5 bg-[#bced6d1b] rounded-xl w-80 h-48">
+              <figure class="w-12 h-12"><img src="Images/Group 1171275317.png" alt="Album"/>
+              
+              </figure>
+              <p>Email : <br> 
+                hockeys@support.com</p>
+            </div>
+            <div class="grid pl-10 pt-5 bg-[#fddd5f1a] rounded-xl w-80 h-48">
+              <figure class="w-12 h-12"><img src="Images/Group 1171275321.png" alt="Album"/>
+              
+              </figure>
+              <p>Location : <br> 
+                <span class="font-extrabold">152/1 Mohakhali Wireless Gate</span></p>
+            </div>
+            <div class="grid pl-10 pt-5 bg-[#bced6d1b] rounded-xl w-80 h-48">
+              <figure class="w-12 h-12"><img src="Images/Group 1171275317.png" alt="Album"/>
+              
+              </figure>
+              <p class="font-extrabold">Phone Number : <br> 
+                (+62) 123-321-543</p>
+            </div>
+           </div>
+            <div class="card-body  ">
+                <div class="grid gap-5 grid-cols-2 ">
+                  <div>
+                    <p class="font-extrabold">Your Name</p><br>
+                    <input type="text" placeholder="Enter your full name" class="input input-bordered w-full max-w-xs" />
+                  </div>
+                  <div>
+                    <p class="font-extrabold">Your Email</p><br>
+                    <input type="text" placeholder="Enter your full name" class="input input-bordered w-full max-w-xs" />
+                  </div>
+                  <div>
+                    <p class="font-extrabold"> Subject</p><br>
+                    <input type="text" placeholder="Enter your subject" class="input input-bordered w-full max-w-xs" />
+                  </div>
+                  <div>
+                    <p class="font-extrabold">Phone Number</p><br>
+                    <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" />
+                  </div>
+                  
+                  
+                  
+                </div>
+                <div class="textarea-lg ">
+                  <p class="font-extrabold"> Massage</p><br>
+                  <textarea placeholder="Write your message" class="textarea textarea-bordered textarea-lg h-60 w-full max-w-xs" ></textarea>
+                </div>
+                <button class="btn text-white bg-red-500">Send Message</button>
+              
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="">
+      
+      <section class="lg:px-32 pt-10 ">
+        <hr class="border-dotted pt-5 ">
+        <div class="bg-[#13131808] rounded-2xl pb-10 ">
+          
+          <p class="text-center font-extrabold text-3xl">Social Media</p><br>
+          <p class="flex justify-center items-center"><img class="" src="Images/Social.png" alt=""></p>
+        </div>
+      </section>
+      <section>
+        <footer class="footer p-10 bg-neutral text-neutral-content">
+          <nav>
+            <header class="footer-title">Services</header> 
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+          </nav> 
+          <nav>
+            <header class="footer-title">Company</header> 
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+          </nav> 
+          <nav>
+            <header class="footer-title">Legal</header> 
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+          </nav>
+          <nav>
+            <header class="footer-title">Legal</header> 
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+          </nav>
+        </footer>
+      </section>
+    </footer>
+</body>
+</html>
